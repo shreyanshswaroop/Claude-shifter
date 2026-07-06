@@ -1,0 +1,30 @@
+<svg width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="metal" cx="38%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#fff7e8"></stop>
+      <stop offset="38%" stop-color="#ddd5c5"></stop>
+      <stop offset="65%" stop-color="#aaa195"></stop>
+      <stop offset="100%" stop-color="#f2eadc"></stop>
+    </radialGradient>
+
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="black" flood-opacity="0.55"></feDropShadow>
+    </filter>
+
+    <filter id="slotShadow">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="black" flood-opacity="0.65"></feDropShadow>
+    </filter>
+  </defs>
+
+  <circle cx="210" cy="210" r="165" fill="url(#metal)" stroke="#f7efe2" stroke-width="3" filter="url(#softShadow)"></circle>
+
+  <circle cx="210" cy="210" r="158" stroke="rgba(255,255,255,0.35)" stroke-width="2"></circle>
+  <circle cx="210" cy="210" r="145" stroke="rgba(0,0,0,0.12)" stroke-width="1"></circle>
+
+  <g filter="url(#slotShadow)">
+    <rect x="90" y="70" width="36" height="280" rx="18" fill="#050505"></rect>
+    <rect x="192" y="70" width="36" height="280" rx="18" fill="#050505"></rect>
+    <rect x="294" y="70" width="36" height="280" rx="18" fill="#050505"></rect>
+    <rect x="108" y="192" width="204" height="36" rx="18" fill="#050505"></rect>
+  </g>
+</svg>

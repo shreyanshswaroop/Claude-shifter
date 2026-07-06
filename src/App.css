@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #343434, #111);
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel {
+  width: 390px;
+  padding: 24px;
+  background: #101010;
+  color: white;
+  border-radius: 28px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.65);
+  border: 1px solid #2a2a2a;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 17px;
+  margin: 0 0 18px;
+}
+
+.display {
+  background: #050505;
+  border: 1px solid #333;
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.display div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.display span {
+  font-size: 11px;
+  color: #999;
+  letter-spacing: 2px;
+}
+
+.display strong {
+  color: #9cff7a;
+  font-size: 20px;
+}
+
+.shifter-box {
+  position: relative;
+  width: 320px;
+  height: 270px;
+  margin: 0 auto;
+  background: linear-gradient(145deg, #e9e4d8, #bcb5aa);
+  border-radius: 50%;
+  border: 10px solid #191919;
+  overflow: hidden;
+  touch-action: none;
+}
+
+.h-line,
+.v-line {
+  position: absolute;
+  background: #151515;
+  border-radius: 999px;
+}
+
+.v-line {
+  width: 22px;
+  height: 160px;
+  top: 50px;
+}
+
+.v-line.left {
+  left: 49px;
+}
+
+.v-line.middle {
+  left: 149px;
+}
+
+.v-line.right {
+  left: 249px;
+}
+
+.h-line {
+  height: 22px;
+  width: 100px;
+  left: 60px;
+}
+
+.h-line.top-left {
+  top: 50px;
+  left: 60px;
+}
+
+.h-line.top-middle {
+  top: 50px;
+  left: 160px;
+}
+
+.h-line.top-right {
+  top: 50px;
+  left: 200px;
+  width: 70px;
+}
+
+.h-line.bottom-left {
+  top: 200px;
+  left: 60px;
+}
+
+.h-line.bottom-middle {
+  top: 200px;
+  left: 160px;
+}
+
+.h-line.bottom-right {
+  top: 200px;
+  left: 200px;
+  width: 70px;
+}
+
+.gear-label {
+  position: absolute;
+  color: #151515;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.gear-1 {
+  left: 55px;
+  top: 18px;
+}
+
+.gear-3 {
+  left: 155px;
+  top: 18px;
+}
+
+.gear-5 {
+  left: 255px;
+  top: 18px;
+}
+
+.gear-r {
+  left: 255px;
+  top: 226px;
+}
+
+.knob {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: 4px solid #f1f1f1;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #777);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.55);
+  transform: translate(-50%, -50%);
+  cursor: grab;
+  z-index: 10;
+}
+
+.knob.dragging {
+  cursor: grabbing;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.hint {
+  text-align: center;
+  color: #aaa;
+  font-size: 13px;
+  margin: 20px 0 0;
+}
